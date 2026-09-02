@@ -1,0 +1,8 @@
+float64 max_velocity
+float64 max_acceleration
+float64 max_jerk
+float64 max_snap
+float64 observed_max_velocity
+float64 observed_max_acceleration
+float64 observed_max_jerk
+float64 observed_max_snap

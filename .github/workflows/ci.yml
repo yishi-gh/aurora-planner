@@ -1,0 +1,118 @@
+name: AURORA-Planner CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build-and-test:
+    name: ${{ matrix.ros_distro }} on Ubuntu ${{ matrix.ubuntu }}
+    runs-on: ubuntu-${{ matrix.ubuntu }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - ubuntu: "22.04"
+            ros_distro: humble
+          - ubuntu: "24.04"
+            ros_distro: jazzy
+    container:
+      image: ros:${{ matrix.ros_distro }}-ros-base
+    env:
+      DEBIAN_FRONTEND: noninteractive
+      PYTHONUNBUFFERED: "1"
+      RMW_IMPLEMENTATION: rmw_fastrtps_cpp
+      ROS_DOMAIN_ID: 26
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
+      - name: Install build and dependency tools
+        shell: bash
+        run: |
+          apt-get update
+          apt-get install -y --no-install-recommends \
+            python3-colcon-common-extensions \
+            python3-rosdep \
+            python3-vcstool \
+            libeigen3-dev \
+            cppcheck
+
+      - name: Resolve ROS dependencies
+        shell: bash
+        run: |
+          rosdep update
+          rosdep install --from-paths src --ignore-src \
+            --rosdistro "${ROS_DISTRO}" -r -y
+
+      - name: Audit workspace structure and interfaces
+        shell: bash
+        run: |
+          python3 tools/release/audit_workspace.py
+          python3 tools/release/generate_source_sbom.py \
+            --check docs/source-sbom.spdx.json
+
+      - name: Build workspace
+        shell: bash
+        run: |
+          source "/opt/ros/${ROS_DISTRO}/setup.bash"
+          colcon build --base-paths src \
+            --cmake-args -DCMAKE_BUILD_TYPE=RelWithDebInfo \
+                         -DPython3_EXECUTABLE=/usr/bin/python3
+
+      - name: Run tests
+        shell: bash
+        run: |
+          source "/opt/ros/${ROS_DISTRO}/setup.bash"
+          source install/setup.bash
+          colcon test --base-paths src --executor sequential \
+            --event-handlers console_direct+
+          colcon test-result --all --verbose
+
+      - name: Run core static analysis
+        shell: bash
+        run: |
+          cppcheck --enable=warning,performance,portability \
+            --error-exitcode=1 --inline-suppr --suppress=missingIncludeSystem \
+            src/aurora_math/src \
+            src/aurora_map/src \
+            src/aurora_search/src \
+            src/aurora_trajectory/src \
+            src/aurora_prediction/src \
+            src/aurora_tracking/src \
+            src/aurora_risk/src \
+            src/aurora_planner_core/src \
+            src/aurora_ros/src \
+            src/aurora_flight_adapter/src \
+            src/aurora_sim/src
+
+      - name: Build and run core benchmark
+        shell: bash
+        run: |
+          source "/opt/ros/${ROS_DISTRO}/setup.bash"
+          colcon build --base-paths src --packages-select aurora_planner_core \
+            --cmake-args -DCMAKE_BUILD_TYPE=RelWithDebInfo \
+                         -DPython3_EXECUTABLE=/usr/bin/python3 \
+                         -DAURORA_BUILD_BENCHMARKS=ON
+          mkdir -p benchmark-results
+          install/aurora_planner_core/lib/aurora_planner_core/aurora_static_planner_benchmark \
+            --warmup 10 --iterations 100 \
+            --output "benchmark-results/aurora-${ROS_DISTRO}-static-planner.json"
+          python3 -c 'import json, math, os, pathlib; p = pathlib.Path("benchmark-results/aurora-" + os.environ["ROS_DISTRO"] + "-static-planner.json"); d = json.loads(p.read_text()); assert d["success_rate"] == 1.0; assert math.isfinite(d["latency_ms"]["p99"]); print(json.dumps(d, indent=2))'
+
+          install/aurora_planner_core/lib/aurora_planner_core/aurora_static_planner_benchmark \
+            --soft-risk --warmup 10 --iterations 100 \
+            --output "benchmark-results/aurora-${ROS_DISTRO}-soft-risk.json"
+          python3 -c 'import json, math, os, pathlib; p = pathlib.Path("benchmark-results/aurora-" + os.environ["ROS_DISTRO"] + "-soft-risk.json"); d = json.loads(p.read_text()); assert d["soft_risk_enabled"] is True; assert d["success_rate"] == 1.0; assert d["risk_evaluations"] > 0; assert math.isfinite(d["latency_ms"]["p99"]); print(json.dumps(d, indent=2))'
+
+      - name: Upload build and test logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: aurora-${{ matrix.ros_distro }}-logs
+          path: |
+            build
+            log
+            benchmark-results
+          if-no-files-found: ignore

@@ -1,0 +1,5 @@
+float64 time_from_start
+bool has_time
+geometry_msgs/Point position
+geometry_msgs/Vector3 velocity
+geometry_msgs/Vector3 acceleration

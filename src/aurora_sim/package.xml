@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>aurora_sim</name>
+  <version>0.1.0</version>
+  <description>Deterministic 3D software-in-the-loop execution model for AURORA-Planner.</description>
+
+  <maintainer email="pathalgo26@todo.todo">PathAlgo26</maintainer>
+  <license>GPL-3.0-only</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>ament_cmake_gtest</buildtool_depend>
+  <depend>aurora_flight_adapter</depend>
+  <depend>aurora_math</depend>
+  <depend>aurora_msgs</depend>
+  <depend>eigen3_cmake_module</depend>
+  <depend>geometry_msgs</depend>
+  <depend>rclcpp</depend>
+  <exec_depend>ament_index_python</exec_depend>
+  <test_depend>launch_ros</test_depend>
+  <test_depend>launch_testing_ament_cmake</test_depend>
+  <test_depend>aurora_ros</test_depend>
+  <test_depend>rclpy</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

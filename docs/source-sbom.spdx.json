@@ -1,0 +1,767 @@
+{
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "AURORA-Planner source package dependency inventory",
+  "documentNamespace": "https://spdx.org/spdxdocs/aurora-planner-source-0.1.0",
+  "creationInfo": {
+    "created": "2026-09-02T12:42:38Z",
+    "creators": [
+      "Tool: AURORA-Planner source SBOM generator"
+    ]
+  },
+  "documentDescribes": [
+    "SPDXRef-Package-aurora-bringup",
+    "SPDXRef-Package-aurora-flight-adapter",
+    "SPDXRef-Package-aurora-map",
+    "SPDXRef-Package-aurora-math",
+    "SPDXRef-Package-aurora-msgs",
+    "SPDXRef-Package-aurora-planner-core",
+    "SPDXRef-Package-aurora-prediction",
+    "SPDXRef-Package-aurora-risk",
+    "SPDXRef-Package-aurora-ros",
+    "SPDXRef-Package-aurora-search",
+    "SPDXRef-Package-aurora-sim",
+    "SPDXRef-Package-aurora-tracking",
+    "SPDXRef-Package-aurora-trajectory"
+  ],
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-Package-ament-cmake",
+      "name": "ament_cmake",
+      "versionInfo": "UNRESOLVED",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ament-cmake-gtest",
+      "name": "ament_cmake_gtest",
+      "versionInfo": "UNRESOLVED",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ament-index-python",
+      "name": "ament_index_python",
+      "versionInfo": "UNRESOLVED",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-aurora-bringup",
+      "name": "aurora_bringup",
+      "versionInfo": "0.1.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "GPL-3.0-only",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-aurora-flight-adapter",
+      "name": "aurora_flight_adapter",
+      "versionInfo": "0.1.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "GPL-3.0-only",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-aurora-map",
+      "name": "aurora_map",
+      "versionInfo": "0.1.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "GPL-3.0-only",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-aurora-math",
+      "name": "aurora_math",
+      "versionInfo": "0.1.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "GPL-3.0-only",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-aurora-msgs",
+      "name": "aurora_msgs",
+      "versionInfo": "0.1.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "GPL-3.0-only",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-aurora-planner-core",
+      "name": "aurora_planner_core",
+      "versionInfo": "0.1.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "GPL-3.0-only",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-aurora-prediction",
+      "name": "aurora_prediction",
+      "versionInfo": "0.1.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "GPL-3.0-only",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-aurora-risk",
+      "name": "aurora_risk",
+      "versionInfo": "0.1.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "GPL-3.0-only",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-aurora-ros",
+      "name": "aurora_ros",
+      "versionInfo": "0.1.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "GPL-3.0-only",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-aurora-search",
+      "name": "aurora_search",
+      "versionInfo": "0.1.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "GPL-3.0-only",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-aurora-sim",
+      "name": "aurora_sim",
+      "versionInfo": "0.1.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "GPL-3.0-only",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-aurora-tracking",
+      "name": "aurora_tracking",
+      "versionInfo": "0.1.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "GPL-3.0-only",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-aurora-trajectory",
+      "name": "aurora_trajectory",
+      "versionInfo": "0.1.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "GPL-3.0-only",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-builtin-interfaces",
+      "name": "builtin_interfaces",
+      "versionInfo": "UNRESOLVED",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-eigen3-cmake-module",
+      "name": "eigen3_cmake_module",
+      "versionInfo": "UNRESOLVED",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-geometry-msgs",
+      "name": "geometry_msgs",
+      "versionInfo": "UNRESOLVED",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-launch-ros",
+      "name": "launch_ros",
+      "versionInfo": "UNRESOLVED",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-launch-testing-ament-cmake",
+      "name": "launch_testing_ament_cmake",
+      "versionInfo": "UNRESOLVED",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-launch-testing-ros",
+      "name": "launch_testing_ros",
+      "versionInfo": "UNRESOLVED",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-rclcpp",
+      "name": "rclcpp",
+      "versionInfo": "UNRESOLVED",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-rclpy",
+      "name": "rclpy",
+      "versionInfo": "UNRESOLVED",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-rosbag2-py",
+      "name": "rosbag2_py",
+      "versionInfo": "UNRESOLVED",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-rosidl-default-generators",
+      "name": "rosidl_default_generators",
+      "versionInfo": "UNRESOLVED",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-rosidl-default-runtime",
+      "name": "rosidl_default_runtime",
+      "versionInfo": "UNRESOLVED",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-sensor-msgs",
+      "name": "sensor_msgs",
+      "versionInfo": "UNRESOLVED",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-std-msgs",
+      "name": "std_msgs",
+      "versionInfo": "UNRESOLVED",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-tf2",
+      "name": "tf2",
+      "versionInfo": "UNRESOLVED",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-tf2-ros",
+      "name": "tf2_ros",
+      "versionInfo": "UNRESOLVED",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-tf2-sensor-msgs",
+      "name": "tf2_sensor_msgs",
+      "versionInfo": "UNRESOLVED",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-bringup",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ament-cmake"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-bringup",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ament-index-python"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-bringup",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-aurora-ros"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-bringup",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-aurora-sim"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-flight-adapter",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ament-cmake"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-flight-adapter",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ament-cmake-gtest"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-flight-adapter",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-aurora-math"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-flight-adapter",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-aurora-msgs"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-flight-adapter",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-eigen3-cmake-module"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-flight-adapter",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-geometry-msgs"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-map",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ament-cmake"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-map",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ament-cmake-gtest"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-map",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-eigen3-cmake-module"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-math",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ament-cmake"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-math",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ament-cmake-gtest"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-math",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-eigen3-cmake-module"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-msgs",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ament-cmake"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-msgs",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-builtin-interfaces"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-msgs",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-geometry-msgs"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-msgs",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-rosidl-default-generators"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-msgs",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-rosidl-default-runtime"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-msgs",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-std-msgs"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-planner-core",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ament-cmake"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-planner-core",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ament-cmake-gtest"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-planner-core",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-aurora-map"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-planner-core",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-aurora-math"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-planner-core",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-aurora-search"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-planner-core",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-aurora-trajectory"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-prediction",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ament-cmake"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-prediction",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ament-cmake-gtest"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-prediction",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-eigen3-cmake-module"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-risk",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ament-cmake"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-risk",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ament-cmake-gtest"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-risk",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-aurora-prediction"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-risk",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-aurora-trajectory"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-risk",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-eigen3-cmake-module"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-ros",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ament-cmake"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-ros",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ament-cmake-gtest"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-ros",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-aurora-flight-adapter"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-ros",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-aurora-map"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-ros",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-aurora-math"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-ros",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-aurora-msgs"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-ros",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-aurora-planner-core"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-ros",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-aurora-prediction"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-ros",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-aurora-risk"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-ros",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-aurora-tracking"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-ros",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-aurora-trajectory"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-ros",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-eigen3-cmake-module"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-ros",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-geometry-msgs"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-ros",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-launch-testing-ament-cmake"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-ros",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-launch-testing-ros"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-ros",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-rclcpp"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-ros",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-rclpy"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-ros",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-rosbag2-py"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-ros",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-sensor-msgs"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-ros",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-tf2"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-ros",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-tf2-ros"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-ros",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-tf2-sensor-msgs"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-search",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ament-cmake"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-search",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ament-cmake-gtest"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-search",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-aurora-map"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-sim",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ament-cmake"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-sim",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ament-cmake-gtest"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-sim",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ament-index-python"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-sim",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-aurora-flight-adapter"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-sim",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-aurora-math"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-sim",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-aurora-msgs"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-sim",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-aurora-ros"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-sim",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-eigen3-cmake-module"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-sim",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-geometry-msgs"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-sim",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-launch-ros"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-sim",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-launch-testing-ament-cmake"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-sim",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-rclcpp"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-sim",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-rclpy"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-tracking",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ament-cmake"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-tracking",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ament-cmake-gtest"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-tracking",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-aurora-prediction"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-tracking",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-eigen3-cmake-module"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-trajectory",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ament-cmake"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-trajectory",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ament-cmake-gtest"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-trajectory",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-aurora-map"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-trajectory",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-aurora-math"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aurora-trajectory",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-aurora-search"
+    }
+  ]
+}

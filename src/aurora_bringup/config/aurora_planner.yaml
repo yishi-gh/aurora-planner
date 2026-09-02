@@ -1,0 +1,67 @@
+aurora_planner_node:
+  ros__parameters:
+    # Baseline profile: zero soft-risk weight preserves the EGO static path.
+    topics.pointcloud: /points
+    topics.depth_image: /camera/depth/image_rect_raw
+    topics.camera_info: /camera/depth/camera_info
+    map.frame: map
+    map.reject_unknown: true
+    map.origin_x: -20.0
+    map.origin_y: -20.0
+    map.origin_z: -2.0
+    map.dimensions_x: 80
+    map.dimensions_y: 80
+    map.dimensions_z: 40
+    map.resolution: 0.5
+    map.occupancy_threshold: 0.8
+    map.inflation_radius: 0.65
+    map.require_fresh_observation: true
+    map.max_observation_age: 1.0
+
+    # Optional rectified depth-image input. PointCloud2 remains the default.
+    depth.enabled: false
+    depth.max_points: 100000
+    depth.pixel_stride: 1
+    depth.min_range: 0.1
+    depth.max_range: 30.0
+    depth.confidence: 1.0
+    depth.camera_info_time_tolerance: 0.5
+
+    vehicle.radius: 0.65
+    vehicle.max_velocity: 3.0
+    vehicle.max_acceleration: 6.0
+
+    planning.horizon_mode: distance
+    planning.local_horizon: 6.0
+    planning.resampling_spacing: 0.5
+    planning.resampling_minimum_points: 9
+    planning.optimizer_interval: 0.25
+    planning.optimizer_clearance: 0.65
+    planning.optimizer_max_iterations: 180
+    planning.optimizer_max_compute_time_sec: 0.0
+    planning.optimizer_samples_per_span: 8
+    planning.optimizer_lambda_risk: 0.0
+    planning.optimizer_max_risk_evaluations: 10000
+    planning.validation_samples_per_span: 16
+
+    prediction.sample_interval: 0.1
+    prediction.max_horizon: 15.0
+    prediction.max_samples: 10000
+    prediction.process_noise_acceleration: 1.0
+    prediction.process_noise_jerk: 1.0
+
+    risk.enable_soft_cost: true
+    risk.enable_map_quality: false
+    risk.require_dynamic_information: true
+    risk.max_prediction_age: 0.5
+    risk.sigma_multiplier: 3.0
+    risk.warning_clearance: 0.5
+    risk.sample_interval: 0.1
+    risk.execution_position_variance: 0.0
+    risk.sensing_delay: 0.0
+    risk.tracking_delay: 0.0
+    risk.planning_delay: 0.0
+    risk.execution_delay: 0.0
+    risk.safety_margin: 0.0
+
+    dynamic_input_mode: external_tracks

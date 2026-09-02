@@ -1,0 +1,74 @@
+{
+  "source": "live ROS 2 topic capture from aurora_ros + aurora_sim",
+  "frame_id": "map",
+  "request_id": 82601,
+  "trajectory_id": 82601,
+  "map_version": 41,
+  "static_status": 0,
+  "static_detail": "static local trajectory validated",
+  "dynamic_status": 9,
+  "dynamic_detail": "ROS 2 dynamic risk gate rejected trajectory with DYNAMIC_COLLISION: trajectory enters a conservative 3-sigma dynamic obstacle envelope",
+  "dynamic_risk_level": 2,
+  "dynamic_risk": 1.0,
+  "worst_obstacle_id": 7,
+  "trajectory_message_count": 1,
+  "execution_state_message_count": 106,
+  "desired_pose_message_count": 105,
+  "static_endpoints": [
+    [
+      10.0,
+      0.0,
+      1.0
+    ],
+    [
+      10.0,
+      2.5,
+      1.0
+    ],
+    [
+      10.0,
+      -2.5,
+      1.0
+    ],
+    [
+      10.0,
+      0.0,
+      3.0
+    ],
+    [
+      10.0,
+      0.0,
+      -1.0
+    ],
+    [
+      0.0,
+      4.0,
+      1.0
+    ],
+    [
+      0.0,
+      -4.0,
+      1.0
+    ]
+  ],
+  "dynamic_track": {
+    "track_id": 7,
+    "position": [
+      0.0,
+      -1.5,
+      1.0
+    ],
+    "velocity": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "position_variance": 0.0025,
+    "velocity_variance": 0.01,
+    "model": "CV"
+  },
+  "commands": {
+    "planner": "ros2 run aurora_ros aurora_planner_node",
+    "executor": "ros2 run aurora_sim aurora_sim_node"
+  }
+}

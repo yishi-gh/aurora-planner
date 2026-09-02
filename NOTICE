@@ -1,0 +1,19 @@
+AURORA-Planner
+Copyright (C) 2026 PathAlgo26 contributors
+
+AURORA-Planner is distributed under the GNU General Public License,
+version 3.0 only. The complete license text is provided in LICENSE.
+
+This project is an independent ROS 2 rewrite of a three-dimensional aerial
+local-planning pipeline. The EGO-Planner repository is kept as a read-only
+algorithm reference at the recorded commit; source files from that repository
+are not distributed by AURORA-Planner.
+
+Reference:
+  EGO-Planner, https://github.com/ZJU-FAST-Lab/ego-planner
+  Reference commit: bfda51284c8c1b476043255a8145ef925a3778a5
+  Upstream license: GNU General Public License, version 3
+
+ROS 2, Eigen3, GoogleTest, and other system or optional backend dependencies
+are separate works. Their licenses and versions must be audited according to
+the target installation and are not replaced by this notice.

@@ -1,0 +1,19 @@
+std_msgs/Header header
+uint64 request_id
+
+uint8 SUCCESS=0
+uint8 GOAL_REACHED=1
+uint8 INVALID_REQUEST=2
+uint8 NO_GLOBAL_REFERENCE=3
+uint8 INVALID_HORIZON=4
+uint8 LOCAL_GOAL_UNAVAILABLE=5
+uint8 SEARCH_FAILED=6
+uint8 OPTIMIZATION_FAILED=7
+uint8 PREFIX_UNSAFE=8
+uint8 VALIDATION_FAILED=9
+uint8 status
+string detail
+bool has_trajectory
+Trajectory trajectory
+RiskReport risk_report
+SafetyReport safety_report

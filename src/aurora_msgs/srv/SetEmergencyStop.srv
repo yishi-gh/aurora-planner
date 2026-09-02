@@ -1,0 +1,8 @@
+# engage=true latches emergency stop; engage=false requests explicit reset.
+bool engage
+string reason
+---
+bool accepted
+bool active
+bool latched
+string detail

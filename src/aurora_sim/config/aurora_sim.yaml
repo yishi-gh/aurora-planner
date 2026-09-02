@@ -1,0 +1,22 @@
+aurora_sim_node:
+  ros__parameters:
+    simulation.initial_x: -4.0
+    simulation.initial_y: 0.0
+    simulation.initial_z: 1.0
+    simulation.max_velocity: 3.0
+    simulation.max_acceleration: 6.0
+    simulation.position_gain: 6.0
+    simulation.velocity_gain: 4.0
+    simulation.max_integration_step: 0.01
+    simulation.max_update_gap: 0.5
+    simulation.time_tolerance: 0.000001
+    simulation.setpoint_interval: 0.05
+    simulation.max_setpoints: 2000
+    simulation.publish_rate_hz: 50.0
+    simulation.frame_id: map
+    simulation.reject_trajectories: false
+    topics.trajectory: /aurora/trajectory
+    topics.vehicle_state: /aurora/sim/vehicle_state
+    topics.desired_pose: /aurora/sim/desired_pose
+    topics.emergency_state: /aurora/emergency_stop_state
+    topics.execution_status: /aurora/sim/execution_status
