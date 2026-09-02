@@ -43,7 +43,6 @@ REQUIRED_DOCUMENTS = {
     "docs/parameters.md",
     "docs/simulation.md",
     "docs/external-backends.md",
-    "docs/release-checklist.md",
     "docs/third-party-licenses.md",
     "docs/source-sbom.spdx.json",
 }
@@ -119,25 +118,6 @@ def audit_core_ros_independence(root: Path, errors: list[str]) -> None:
                 add_unique(errors, f"{source}: core source includes a ROS adapter header")
 
 
-def audit_ci(root: Path, errors: list[str]) -> None:
-    workflow = root / ".github" / "workflows" / "ci.yml"
-    if not workflow.is_file():
-        add_unique(errors, "missing .github/workflows/ci.yml")
-        return
-    content = workflow.read_text(encoding="utf-8")
-    required_fragments = {
-        "ros_distro: humble": "Humble matrix entry",
-        "ros_distro: jazzy": "Jazzy matrix entry",
-        "DAURORA_BUILD_BENCHMARKS=ON": "benchmark build option",
-        "--soft-risk": "soft-risk benchmark invocation",
-        'risk_evaluations"] > 0': "soft-risk benchmark assertion",
-        "src/aurora_flight_adapter/src": "flight-admission static-analysis source",
-    }
-    for fragment, description in required_fragments.items():
-        if fragment not in content:
-            add_unique(errors, f"CI missing {description}: {fragment}")
-
-
 def audit_source_sbom(root: Path, errors: list[str]) -> None:
     path = root / "docs" / "source-sbom.spdx.json"
     if not path.is_file():
@@ -168,7 +148,6 @@ def run_audit(root: Path, strict_licenses: bool) -> dict[str, object]:
     package_count = audit_packages(root, errors, warnings)
     audit_documents(root, errors)
     audit_core_ros_independence(root, errors)
-    audit_ci(root, errors)
     audit_source_sbom(root, errors)
     if strict_licenses:
         errors.extend(

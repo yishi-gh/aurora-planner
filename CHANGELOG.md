@@ -23,5 +23,5 @@ a development baseline, not a declaration of flight readiness.
 
 ### Known limitations
 
-- Humble CI evidence, PX4/Gazebo/GZ integration, real sensor and flight-controller validation, target-hardware real-time measurements, and final installed-environment SBOM remain open.
+- Ubuntu 22.04 + ROS 2 Humble validation, PX4/Gazebo/GZ integration, real sensor and flight-controller validation, target-hardware real-time measurements, and final installed-environment SBOM remain open.
 - The deterministic software-in-the-loop executor is not a substitute for real flight dynamics or flight-controller acceptance.

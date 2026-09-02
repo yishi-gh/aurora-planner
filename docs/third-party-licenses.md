@@ -8,7 +8,7 @@
 |---|---|---|
 | 13 个 AURORA 包 | 已统一声明 `GPL-3.0-only` | 与顶层 `LICENSE`、`NOTICE` 和实际分发内容一起审计 |
 
-顶层 `LICENSE` 是从记录的 EGO-Planner GPLv3 许可文本复用的标准许可文件；`NOTICE` 记录 AURORA 的版权声明、参考 commit 和源文件边界。`docs/source-sbom.spdx.json` 是根据当前 `src/*/package.xml` 生成的 SPDX 2.3 源包依赖图，已接入结构审计和 CI 的一致性检查；系统包版本、可选外部后端和未随源码分发的组件仍需在目标环境中单独核验。
+顶层 `LICENSE` 是从记录的 EGO-Planner GPLv3 许可文本复用的标准许可文件；`NOTICE` 记录 AURORA 的版权声明、参考 commit 和源文件边界。`docs/source-sbom.spdx.json` 是根据当前 `src/*/package.xml` 生成的 SPDX 2.3 源包依赖图，可由结构审计工具校验；系统包版本、可选外部后端和未随源码分发的组件仍需在目标环境中单独核验。
 
 当前 AURORA 的顶层许可选择和包元数据已经按用户确认完成；这不替代针对具体分发物的法律审查。
 
@@ -33,4 +33,4 @@
 
 ## 当前开放项
 
-许可证元数据和顶层文件已完成。实际安装环境的依赖版本/SBOM、可选外部后端许可证、Humble CI、PX4/GZ 和真实飞行验收仍为 `OPEN`；这些项目不应被本地 Jazzy 或确定性软件在环结果替代。
+许可证元数据和顶层文件已完成。实际安装环境的依赖版本/SBOM、可选外部后端许可证、Ubuntu 22.04 + ROS 2 Humble、PX4/GZ 和真实飞行验收仍为 `OPEN`；这些项目不应被本地 Jazzy 或确定性软件在环结果替代。

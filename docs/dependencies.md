@@ -1,13 +1,13 @@
-# 依赖与发行版矩阵
+# 依赖与发行版说明
 
 本文档区分 AURORA 的核心依赖、ROS 2 适配依赖和可选外部后端。核心算法不应因为安装 PX4、Gazebo 或某个传感器驱动而改变。
 
 ## 支持矩阵
 
-| 平台 | ROS 2 | 编译器基线 | 状态 |
+| 平台 | ROS 2 | 编译器基线 | 支持说明 |
 |---|---|---|---|
-| Ubuntu 22.04 | Humble | GCC 11，C++17 | 目标平台；需 CI 证据 |
-| Ubuntu 24.04 | Jazzy | GCC 13，C++17 | 本机已验证 |
+| Ubuntu 22.04 | Humble | GCC 11，C++17 | 支持目标组合，需按安装说明验证 |
+| Ubuntu 24.04 | Jazzy | GCC 13，C++17 | 当前支持组合 |
 
 两套平台必须使用匹配的 Ubuntu/ROS 2 组合。项目不支持在同一系统中混用 Humble 和 Jazzy 的环境变量或已编译产物。
 
@@ -56,11 +56,9 @@ rosdep install --from-paths src --ignore-src --rosdistro "$ROS_DISTRO" -r -y
 colcon build --base-paths src --cmake-args -DCMAKE_BUILD_TYPE=RelWithDebInfo
 ```
 
-本机 2026-09-02 的 `rosdep check` 未执行成功，因为系统 rosdep 尚未初始化；这不是包缺依赖的证据。需要管理员执行 `rosdep init` 后再运行 `rosdep update`，CI 容器中的依赖解析由工作流单独验证。
+如果系统尚未初始化 rosdep，需要管理员执行 `sudo rosdep init`，然后运行 `rosdep update`；这一步只影响依赖解析，不改变核心算法接口。
 
-## CI 矩阵
-
-`.github/workflows/ci.yml` 已定义 Humble/Ubuntu 22.04 和 Jazzy/Ubuntu 24.04 两个 job，步骤包括 rosdep、结构审计、构建、全量测试、结果汇总、核心/ROS 适配/飞控接纳/软件在环 C++ 静态分析、静态核心基准和软风险基准。当前仅有本机 Jazzy 证据；本机 Docker 没有 Humble 镜像，拉取官方 `ros:humble-ros-base` 于 2026-09-02 因访问 Docker Hub 超时失败，GitHub Actions 真实运行成功记录仍为 `OPEN`，不能用本机结果替代 Humble。
+## 源包依赖图
 
 源包依赖图可用以下无第三方 Python 依赖的命令校验：
 

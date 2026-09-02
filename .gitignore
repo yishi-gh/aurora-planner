@@ -9,3 +9,4 @@ __pycache__/
 # Local planning and progress records
 docs/implementation-roadmap.md
 docs/context-log.md
+docs/release-checklist.md

@@ -69,6 +69,6 @@ install/aurora_planner_core/lib/aurora_planner_core/aurora_static_planner_benchm
 
 同日重新执行了 13 包完整构建和允许 Fast DDS UDP 通信的串行全量测试，结果为 223 tests、0 errors、0 failures、0 skipped。该结果与本节 benchmark 使用同一工作区，但 benchmark 数值仍只代表纯 C++ 核心调用，不代表飞行实时性。
 
-## CI 规则
+## 复核规则
 
-CI 在 Humble/Jazzy 矩阵中使用 10 次预热后测量之外的固定 100 次样本，要求 JSON 可解析、成功率为 100%、P99 为有限值；同一步骤还运行软风险模式，并要求 `soft_risk_enabled=true` 且风险评估次数大于零。CI 只证明构建和基础性能基线可运行，不把跨机器的绝对毫秒阈值当作硬门槛；目标硬件确定后再增加分层阈值。
+重复复核时使用 10 次预热和固定测量次数，要求 JSON 可解析、成功率为 100%、P99 为有限值；软风险模式还应满足 `soft_risk_enabled=true` 且风险评估次数大于零。基准只用于确认构建和核心性能路径可运行，不把跨机器的绝对毫秒阈值当作硬门槛；目标硬件确定后再增加分层阈值。
